@@ -1,5 +1,6 @@
 require 'sinatra'
 
+<<<<<<< HEAD
 get '/' do
 "Hello!"
 end
@@ -22,3 +23,8 @@ get '/cat' do
   </div>"
 
 end
+=======
+get '/' do 
+"Hello World"
+end
+>>>>>>> 0c232747b52029690e27b79a8f1cd7c913d52446
