@@ -1,0 +1,53 @@
+<center><h1> Give your name and find out your Spirit animal</h1>
+
+<form action="/named-dog">
+<input type="text" name="name">
+<input type="submit" value="Submit">
+</form>
+
+<% if (@name == "Georgia") %>
+<h1> The Magnificient Pup <%= @name %> </h1>
+<div style='border: 5px dashed'text-align: center>
+  <img src='https://media.giphy.com/media/NGALQBUgvmVTa/giphy.gif' style="width: 90%; height: 90%">
+
+</div>
+
+
+
+<% elsif (@name == "Rylan") %>
+<h1> The ....fairly....Magnificient Pup <%= @name %>? </h1>
+<div>
+<img style='border: 5px dashed', src='https://media.giphy.com/media/d3Fym9OQ08o6agYE/giphy.gif' style="width: 90%; height: 90%"/>
+</div>
+
+<% elsif (@name == "Terry") %>
+<h1> The Chimp <%= @name %> </h1>
+<div>
+  <img src='https://media4.giphy.com/media/Thk2Inob8VIis/200.gif' style="width: 90%; height: 90%"/>
+
+</div>
+<% elsif (@name == "Will") %>
+<h1> The Squirrel <%= @name %> </h1>
+<div>
+  <img src='https://media0.giphy.com/media/7pIUFgIp5rm1i/200.gif' style="width: 90%; height: 90%"/>
+
+</div>
+
+<% elsif @name %>
+<h1> The Magnificient Pup <%= @name %> </h1>
+<div style='border: 5px dashed'text-align: center>
+<img src='https://media4.giphy.com/media/OsVHDytNJNQ7m/200.gif' style="width: 90%; height: 90%"/>
+
+</div>
+
+  <% else %>
+  <h1> This Sad Pup is all alone </h1>
+  <div style='border: 5px dashed'text-align: center>
+  <img src='https://media4.giphy.com/media/OLyqxT26UvPCU/200.gif' style="width: 90%; height: 90%"/>
+
+</div>
+
+
+
+  <% end %>
+</center>
